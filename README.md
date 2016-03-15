@@ -1,7 +1,7 @@
 # The-Reduxening
 A Redux boilerplate I plan on using to build future projects.
 
-To Do
+### To Do
 	* set up immutable data using react pure render mixin
 	* install and use react-router
 	* install, configure Redux
