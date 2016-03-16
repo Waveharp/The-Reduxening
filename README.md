@@ -5,6 +5,12 @@ A Redux boilerplate I plan on using to build future projects.
 - [x] set up immutable data using react pure render mixin
 - [x] install and use react-router
 - [ ] install, configure Redux
+	- create reducers
+	- create store
+	- create actions
+	- add tests
+- [ ] get data from Redux to React
+	- install react-redux
 - [ ] install, configure PostCSS and plugins
 	- Rucksack
 	- Lost
