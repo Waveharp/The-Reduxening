@@ -15,4 +15,5 @@ A Redux boilerplate I plan on using to build future projects.
 	- Rucksack
 	- Lost
 	- etc.
-- [ ] improve readme	
+- [ ] prettify URLS
+- [ ] improve readme
