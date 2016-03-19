@@ -1,11 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Router, Route, hashHistory} from 'react-router';
+import {createStore} from 'redux';
+import {Provider} from 'react-redux';
+import reducer from './reducer';
 import App from './components/App';
 import Hello from './components/Hello';
 import Another from './components/Another';
 
 console.log('It lives!');
+
+const store = createStore(reducer);
+store.dispatch({
+	type: 'SET_STATE',
+	state: {
+		count: 5
+	}
+});
 
 const routes = <Route component={App}>
 	<Route path="/another" component={Another} />
@@ -14,6 +25,8 @@ const routes = <Route component={App}>
 </Route>;
 
 ReactDOM.render(
-	<Router history={hashHistory}>{routes}</Router>,
+	<Provider store={store}>
+		<Router history={hashHistory}>{routes}</Router>
+	</Provider>,
 	document.getElementById('app')
 );
