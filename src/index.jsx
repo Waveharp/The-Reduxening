@@ -7,7 +7,7 @@ import reducer from './reducer';
 import App from './components/App';
 import Hello from './components/Hello';
 import Another from './components/Another';
-import Counting from './components/Counting';
+import {CounterContainer} from './components/Counter';
 
 
 console.log('It lives!');
@@ -22,7 +22,7 @@ store.dispatch({
 
 const routes = <Route component={App}>
 	<Route path="/another" component={Another} />
-	<Route path="/counting" component={Counting} />
+	<Route path="/counter" component={CounterContainer} />
 	<Route path="/" component={Hello} />
 }
 </Route>;

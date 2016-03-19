@@ -27,7 +27,7 @@ export const Counter = React.createClass({
 
 function mapStateToProps(state) {
 	return {
-		count: state.getIn('count')
+		count: state.get('count')
 	};
 }
 
