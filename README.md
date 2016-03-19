@@ -10,7 +10,6 @@ A Redux boilerplate I plan on using to build future projects.
 	- create actions
 	- add tests
 - [ ] get data from Redux to React
-	- install react-redux
 - [ ] install, configure PostCSS and plugins
 	- Rucksack
 	- Lost
