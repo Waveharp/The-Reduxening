@@ -4,6 +4,7 @@ import {Router, Route, hashHistory} from 'react-router';
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
 import reducer from './reducer';
+import {setState} from './action_creators';
 import App from './components/App';
 import Hello from './components/Hello';
 import Another from './components/Another';
@@ -13,12 +14,13 @@ import {CounterContainer} from './components/Counter';
 console.log('It lives!');
 
 const store = createStore(reducer);
-store.dispatch({
-	type: 'SET_STATE',
-	state: {
-		count: 5
-	}
-});
+// set initial state for app
+// this will eventually be replaced with a call to a database
+// (likely Firebase)
+const state = {
+	count: 5
+};
+store.dispatch(setState(state));
 
 const routes = <Route component={App}>
 	<Route path="/another" component={Another} />
