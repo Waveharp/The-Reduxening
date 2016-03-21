@@ -7,7 +7,7 @@ import reducer from './reducer';
 import {setState} from './action_creators';
 import remoteActionMiddleware from './remote_action_middleware';
 import App from './components/App';
-import Hello from './components/Hello';
+import {HelloContainer} from './components/Hello';
 import Another from './components/Another';
 import {CounterContainer} from './components/Counter';
 
@@ -29,7 +29,7 @@ store.dispatch(setState(state));
 const routes = <Route component={App}>
 	<Route path="/another" component={Another} />
 	<Route path="/counter" component={CounterContainer} />
-	<Route path="/" component={Hello} />
+	<Route path="/" component={HelloContainer} />
 </Route>;
 
 ReactDOM.render(
