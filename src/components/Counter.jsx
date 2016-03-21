@@ -5,7 +5,7 @@ import * as actionCreators from '../action_creators';
 
 export const Counter = React.createClass({
 	mixins: [PureRenderMixin],
-	incrementCount: function() {
+	incrementCount: function(count) {
 		console.log("incrementCount");
 	},
 	decrementCount: function() {

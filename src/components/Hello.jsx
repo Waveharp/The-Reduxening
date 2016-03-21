@@ -8,7 +8,7 @@ export default React.createClass({
 		return <div className="hello">
 			<h1>Hello, World!</h1>
 			<div>
-				<CounterContainer />
+				<CounterContainer {...this.props}/>
 			</div>
 		</div>
 	}

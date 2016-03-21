@@ -30,7 +30,6 @@ const routes = <Route component={App}>
 	<Route path="/another" component={Another} />
 	<Route path="/counter" component={CounterContainer} />
 	<Route path="/" component={Hello} />
-}
 </Route>;
 
 ReactDOM.render(
