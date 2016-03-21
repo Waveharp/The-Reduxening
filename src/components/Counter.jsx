@@ -1,6 +1,7 @@
 import React from 'react';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
 import {connect} from 'react-redux';
+import * as actionCreators from '../action_creators';
 
 export const Counter = React.createClass({
 	mixins: [PureRenderMixin],
@@ -13,7 +14,7 @@ export const Counter = React.createClass({
 	render: function() {
 		return <div className="counter">
 			<button
-				onClick={() => this.incrementCount()}>
+				onClick={() => this.props.increment(count)}>
 				Increment count
 			</button>
 			<button 
@@ -31,4 +32,7 @@ function mapStateToProps(state) {
 	};
 }
 
-export const CounterContainer = connect(mapStateToProps)(Counter);
+export const CounterContainer = connect(
+	mapStateToProps,
+	actionCreators
+)(Counter);
