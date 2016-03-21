@@ -14,7 +14,7 @@ export const Counter = React.createClass({
 	render: function() {
 		return <div className="counter">
 			<button
-				onClick={() => this.props.increment(count)}>
+				onClick={() => this.props.increment(this.props.count)}>
 				Increment count
 			</button>
 			<button 
