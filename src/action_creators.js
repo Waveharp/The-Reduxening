@@ -4,3 +4,10 @@ export function setState(state) {
 		state
 	};
 }
+
+export function increment(count) {
+	return {
+		type: 'INCREMENT',
+		count
+	};
+}

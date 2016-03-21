@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Router, Route, hashHistory} from 'react-router';
-import {createStore} from 'redux';
+import {createStore, applyMiddleware} from 'redux';
 import {Provider} from 'react-redux';
 import reducer from './reducer';
 import {setState} from './action_creators';
+import remoteActionMiddleware from './remote_action_middleware';
 import App from './components/App';
 import Hello from './components/Hello';
 import Another from './components/Another';
@@ -13,7 +14,10 @@ import {CounterContainer} from './components/Counter';
 
 console.log('It lives!');
 
-const store = createStore(reducer);
+const createStoreWithMiddleware = applyMiddleware(
+	remoteActionMiddleware
+)(createStore);
+const store = createStoreWithMiddleware(reducer);
 // set initial state for app
 // this will eventually be replaced with a call to a database
 // (likely Firebase)
