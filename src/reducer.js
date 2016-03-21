@@ -5,8 +5,7 @@ function setState(state, newState) {
 }
 
 function increment(state, count) {
-	const currentCount = state.get('count');
-	return state.set('count' + 1);
+	return state.set(count++);
 }
 
 export default function(state = Map(), action) {

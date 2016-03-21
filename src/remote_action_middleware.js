@@ -1,4 +1,5 @@
 export default store => next => action => {
-	console.log('in middleware', action);
+	console.log('dispatching', action);
+	console.log('next state', store.getState())
 	return next(action);	
 }
