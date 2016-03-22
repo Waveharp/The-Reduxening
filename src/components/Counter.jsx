@@ -7,6 +7,7 @@ export const Counter = React.createClass({
 	mixins: [PureRenderMixin],
 	incrementCount: function() {
 		console.log("incrementCount");
+		this.props.increment(this.props.count);
 	},
 	decrementCount: function() {
 		console.log("decrementCount");
@@ -14,7 +15,7 @@ export const Counter = React.createClass({
 	render: function() {
 		return <div className="counter">
 			<button
-				onClick={() => this.props.increment(this.props.count)}>
+				onClick={() => this.incrementCount()}>
 				Increment count
 			</button>
 			<button 

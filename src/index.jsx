@@ -25,7 +25,6 @@ const state = {
 	count: 5
 };
 store.dispatch(setState(state));
-store.dispatch(increment(state.count));
 
 const routes = <Route component={App}>
 	<Route path="/another" component={Another} />
