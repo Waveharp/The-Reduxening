@@ -11,6 +11,7 @@ export const Counter = React.createClass({
 	},
 	decrementCount: function() {
 		console.log("decrementCount");
+		this.props.decrement(this.props.count);
 	},
 	render: function() {
 		return <div className="counter">
