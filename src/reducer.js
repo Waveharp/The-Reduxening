@@ -5,8 +5,13 @@ function setState(state, newState) {
 }
 
 function increment(state, count) {
-	const currentCount = state.get('count');
-	return state.set('count' + 1);
+	count++;
+	return state.set('count', count);
+}
+
+function decrement(state, count) {
+	count--;
+	return state.set('count', count);
 }
 
 export default function(state = Map(), action) {
@@ -15,6 +20,8 @@ export default function(state = Map(), action) {
 			return setState(state, action.state);
 		case 'INCREMENT':
 			return increment(state, action.count);
+		case 'DECREMENT':
+			return decrement(state, action.count);
 	}
 	return state;
 }

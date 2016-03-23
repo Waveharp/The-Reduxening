@@ -11,3 +11,10 @@ export function increment(count) {
 		count
 	};
 }
+
+export function decrement(count) {
+	return {
+		type: 'DECREMENT',
+		count
+	};
+}
