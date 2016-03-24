@@ -7,9 +7,13 @@ A Redux boilerplate I plan on using to build future projects.
 - [x] install, configure Redux
 	- add tests
 - [x] get data from Redux to React
-- [ ] install, configure PostCSS and plugins
-	- Rucksack
-	- Lost
-	- etc.
+- [x] install, configure PostCSS 
+- [ ] and PostCSS plugins
+	- [ ] Rucksack
+	- [ ] Lost
+	- [ ] PreCSS
+	- and also look at: 
+		- pxtorem
+		- flexbugs-fixes
 - [ ] prettify URLS
 - [ ] improve readme
