@@ -10,7 +10,7 @@ A Redux boilerplate I plan on using to build future projects.
 - [x] install, configure PostCSS 
 - [ ] and PostCSS plugins
 	- [ ] Rucksack
-	- [ ] Lost
+	- [x] Lost
 	- [ ] PreCSS
 	- and also look at: 
 		- pxtorem
