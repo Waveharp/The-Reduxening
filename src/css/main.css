@@ -2,3 +2,30 @@ body {
 	background-color: dodgerblue;
 	display: flex;
 }
+
+section {
+	lost-utility: clearfix;
+}
+
+div.lost {
+	lost-column: 1/4;
+}
+
+div.first {
+	background-color: red;
+	/*lost-column: 1/3;*/
+}
+
+div.second {
+	background-color: purple;
+	/*lost-column: 1/3;*/
+}
+
+div.third {
+	background-color: orange;
+	/*lost-column: 1/3;*/
+}
+
+div.fourth {
+	background-color: yellow;
+}

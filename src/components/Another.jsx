@@ -6,6 +6,12 @@ export default React.createClass({
 	render: function() {
 		return <div className="hello">
 			<h1>Hello from a new route and a new component!</h1>
+			<section>
+				<div className="first lost">first</div>
+				<div className="second lost">second</div>
+				<div className="third lost">third</div>
+				<div className="fourth lost">fourth</div>
+			</section>
 		</div>
 	}
 })
