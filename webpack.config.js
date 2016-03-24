@@ -1,4 +1,5 @@
-var webpack = require('webpack');
+var webpack      = require('webpack');
+var autoprefixer = require('autoprefixer');
 
 module.exports = {
   entry: [
@@ -15,9 +16,12 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loaders: ['style', 'css']
+        loaders: ['style', 'css', 'postcss']
       }
     ]
+  },
+  postcss: function () {
+    return [autoprefixer];
   },
   resolve: {
     extensions: ['', '.js', '.jsx'],
