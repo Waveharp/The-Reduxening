@@ -12,7 +12,7 @@ import Another from './components/Another';
 import {CounterContainer} from './components/Counter';
 
 // css 
-require('css/main.css');
+require('./css/main.css');
 
 
 console.log('It lives!');
