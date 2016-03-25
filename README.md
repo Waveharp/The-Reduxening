@@ -8,7 +8,7 @@ A Redux boilerplate I plan on using to build future projects.
 	- add tests
 - [x] get data from Redux to React
 - [x] install, configure PostCSS 
-- [ ] and PostCSS plugins
+- [x] and PostCSS plugins
 	- [x] Rucksack
 	- [x] Lost
 	- [x] PreCSS
