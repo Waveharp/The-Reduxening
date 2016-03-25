@@ -7,8 +7,8 @@ export default React.createClass({
 			<div>
 				<h1>The Reduxening</h1>
 				<ul role="nav">
-					<li><Link to="/" activeStyle={{color: 'red'}}>Home</Link></li>
-					<li><Link to="/another" activeStyle={{color: 'red'}}>Examples</Link></li>
+					<li><Link to="/" activeClassName="active">Home</Link></li>
+					<li><Link to="/another" activeClassName="active">Examples</Link></li>
 				</ul>
 				{this.props.children}
 			</div>

@@ -44,3 +44,11 @@ div.fourth {
 .respType {
 	font-size: responsive 12px 21px;
 }
+
+/*
+	Navigation
+*/
+
+.active {
+	color: red;
+}
