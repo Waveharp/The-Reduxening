@@ -1,5 +1,4 @@
 var webpack      = require('webpack');
-var autoprefixer = require('autoprefixer');
 var lost         = require('lost');
 
 module.exports = {
@@ -22,7 +21,7 @@ module.exports = {
     ]
   },
   postcss: function () {
-    return [autoprefixer, lost];
+    return [lost];
   },
   resolve: {
     extensions: ['', '.js', '.jsx'],
