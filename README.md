@@ -9,11 +9,12 @@ A Redux boilerplate I plan on using to build future projects.
 - [x] get data from Redux to React
 - [x] install, configure PostCSS 
 - [ ] and PostCSS plugins
-	- [ ] Rucksack
+	- [x] Rucksack
 	- [x] Lost
-	- [ ] PreCSS
+	- [x] PreCSS
 	- and also look at: 
 		- pxtorem
 		- flexbugs-fixes
+		- copy-assets
 - [ ] prettify URLS
 - [ ] improve readme

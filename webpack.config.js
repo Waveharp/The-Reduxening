@@ -1,6 +1,7 @@
 var webpack      = require('webpack');
 var lost         = require('lost');
 var rucksack     = require('rucksack-css');
+var precss       = require('precss');
 
 module.exports = {
   entry: [
@@ -24,7 +25,8 @@ module.exports = {
   postcss: function () {
     return [
       lost,
-      rucksack({autoprefixer: true})
+      rucksack({autoprefixer: true}),
+      precss
     ];
   },
   resolve: {
