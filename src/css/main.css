@@ -3,6 +3,10 @@ body {
 	display: flex;
 }
 
+/*
+	Lost Grid
+*/
+
 section {
 	lost-utility: clearfix;
 }
@@ -28,4 +32,12 @@ div.third {
 
 div.fourth {
 	background-color: yellow;
+}
+
+/*
+	Rucksack
+*/
+
+.respType {
+	font-size: responsive 12px 21px;
 }
