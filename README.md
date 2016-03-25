@@ -16,5 +16,5 @@ A Redux boilerplate I plan on using to build future projects.
 		- pxtorem
 		- flexbugs-fixes
 		- copy-assets
-- [ ] prettify URLS
+- [x] prettify URLS
 - [ ] improve readme
