@@ -9,7 +9,7 @@ import remoteActionMiddleware from './remote_action_middleware';
 import App from './components/App';
 import {HelloContainer} from './components/Hello';
 import Another from './components/Another';
-import {CounterContainer} from './components/Counter';
+import {} from './components/Counter';
 
 // css 
 require('./css/main.css');
@@ -31,7 +31,6 @@ store.dispatch(setState(state));
 
 const routes = <Route component={App}>
 	<Route path="/another" component={Another} />
-	<Route path="/counter" component={CounterContainer} />
 	<Route path="/" component={HelloContainer} />
 </Route>;
 
