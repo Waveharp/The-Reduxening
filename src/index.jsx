@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Router, Route, hashHistory} from 'react-router';
+import {Router, Route, browserHistory} from 'react-router';
 import {createStore, applyMiddleware} from 'redux';
 import {Provider} from 'react-redux';
 import reducer from './reducer';
@@ -36,7 +36,7 @@ const routes = <Route component={App}>
 
 ReactDOM.render(
 	<Provider store={store}>
-		<Router history={hashHistory}>{routes}</Router>
+		<Router history={browserHistory}>{routes}</Router>
 	</Provider>,
 	document.getElementById('app')
 );
