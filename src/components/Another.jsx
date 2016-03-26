@@ -14,6 +14,7 @@ export default React.createClass({
 				<div className="fourth lost">fourth</div>
 			</section>
 			<section className="rucksacks">
+				<p className="respType">This text is responsive - resize your browser!</p>
 				<p className="respType">Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn. Ehye ep ee shogg, li'hee sll'ha hlirgh li'hee phlegeth ahoth ee Dagon, R'lyeh cebunma ilyaa shugg n'ghft ooboshu r'luh Nyarlathotep. R'lyeh y-throd gof'nn ng'bthnk li'heenyth hai Dagon s'uhn ehyeagl, ftaghu hupadgh 'bthnk h'ron shtunggliog Cthulhu orr'e, shugg cebunma Shub-Niggurath ebunma hai ehye Azathoth. Chtenff Azathoth phlegeth y-'bthnk ilyaa lw'nafh vulgtm nahafh'drn geb lloigor h'Hastur f'kn'a, lw'nafh hrii ya ebunma h'ee ah lloig athg ebunma gof'nn naHastur, grah'n Nyarlathotepyar ya sgn'wahl n'gha stell'bsna vulgtm fm'latgh ebunma Dagonog. Azathoth y-shtunggli shtunggli lw'nafh throd nog lloig lw'nafh, uln wgah'n cAzathoth mg kn'a ron Azathothog, chtenff 'fhalma nnnlw'nafh ooboshu shogg sll'ha. </p>
 			</section>
 		</div>

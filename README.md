@@ -17,4 +17,6 @@ A Redux boilerplate I plan on using to build future projects.
 		- flexbugs-fixes
 		- copy-assets
 - [x] prettify URLS
+- [ ] hook up Firebase
+	- deploy w/ Firebase
 - [ ] improve readme
